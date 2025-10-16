@@ -1,0 +1,72 @@
+Tahir Ziaee
+Project Script: Designer + UI/UX One Page Website
+Theme Direction :A dark, ultra-modern portfolio experience for a graphic designer & UI/UX artist that makes users feel motion, creativity, and intelligence in every scroll.
+Each section should flow like a story — not just blocks of content.
+Design Language :Theme: Dark Futuristic
+Primary Color: #0DA2E7 (Electric Cyan-Blue)
+Secondary Shades:Deep Matte Black: #0A0A0A
+Soft Neon Glow: #00D1FF
+Accent Violet (for depth): #B500F1
+Typography: Use a rare futuristic font with minimalist lines but solid readability.
+Suggested font: “Neue Machina” (by Pangram Pangram) — it gives that “AI meets design” energy.
+Alternate: “Satoshi Variable” or “Inter Tight” (if you want lighter edges).
+Font Pairing:
+Headings: Neue Machina Bold
+Body: Satoshi Regular
+Important Implementation Rule:
+Do NOT add unnecessary React libraries.
+Only use Framer Motion, GSAP, or native CSS animations.
+Keep components modular and lightweight — no UI kits, no dependencies, no distractions.
+Focus purely on performance, scroll experience, and storytelling transitions.
+Page Structure + Section Breakdown
+Hero Section — “The Creative Pulse”
+Full 100vh section, pitch black background.
+Centered designer name (white text with electric blue glow).
+Subheading fades in below:
+“Design is not what it looks like — it’s how it feels to move through it.”
+Subtle animation: blue neon lines move behind the text like slow digital energy waves.
+Cursor trail effect — when user moves cursor, a tiny electric spark follows.
+Scroll down trigger: page shifts smoothly with parallax depth.
+About Section — “The Mind Behind the Interface”
+Split section (left = abstract portrait image with grain texture, right = text).
+When scrolled into view, text slides in with Framer Motion.
+Use soft cyan gradient behind text, with low opacity.
+Text sample:
+“I’m a UI/UX designer obsessed with clarity and creative depth.
+From clean app layouts to bold product stories — I turn pixels into emotions.”
+Add small highlight blocks (Skills, Tools, Experience) that fade in one by one.
+Showcase Section — “Work That Speaks”
+Grid layout: 3 columns, full-width view.
+Each project tile = glassmorphic card (backdrop-filter: blur(10px)), with glowing borders.
+On hover:
+Slight scale up.
+Title and tags appear from bottom.
+Blue glow border animates around image edges.
+Between every column, a thin vertical neon divider line glows softly.
+background: linear-gradient(to bottom, transparent, #0DA2E7, transparent);
+width: 1px;
+Keep height balanced (~90vh total) so user sees a cinematic layout — no white gaps.
+Interaction Section — “The Creative Experience”
+Add an interactive parallax:
+Floating SVG elements (brush strokes, geometric shapes, design tools) move slowly as user scrolls.
+Optional: Mouse-based tilt effect on the entire section (subtle).
+Text:
+“Design is alive when you can feel its rhythm. Every scroll is a frame — every frame tells a story.”
+Contact / Footer — “Let’s Create the Future”
+Full-width, minimal footer.
+Background: gradient from deep black → electric blue.
+Text center-aligned:
+“Ready to collaborate?” in light gray
+Email link in bright blue with hover underline animation.
+Small tagline at bottom:
+“© 2025 Crafted and Built by AA.”
+Floating glowing line animation looping behind the footer as background motion.
+Bonus Micro-Interactions
+Scroll reveal: use framer-motion fade + slide for each section.
+Text shimmer: on hover, text glows briefly with a pulse.
+Smooth scroll snapping: make transitions feel cinematic, not abrupt.
+Favicon + loading screen: animated logo reveal with blue light streak.
+Tech Stack Recommendation
+Frontend: React + Vite (fast build)
+Animation: GSAP ScrollTrigger / Framer Motion
+Styling: TailwindCSS + custom CSS variables for glow & blur
