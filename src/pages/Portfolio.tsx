@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import ShowcaseSection from "@/components/ShowcaseSection";
-import InteractiveSection from "@/components/InteractiveSection";
-import FooterSection from "@/components/FooterSection";
-import CursorTrail from "@/components/CursorTrail";
-import { useScrollTrigger } from "@/hooks/useScrollTrigger";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import ShowcaseSection from "../components/ShowcaseSection";
+import InteractiveSection from "../components/InteractiveSection";
+import FooterSection from "../components/FooterSection";
+import CursorTrail from "../components/CursorTrail";
+import { useScrollTrigger } from "../hooks/useScrollTrigger";
 
 export default function Portfolio() {
   useScrollTrigger();
