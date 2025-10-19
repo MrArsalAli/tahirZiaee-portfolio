@@ -1,12 +1,37 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { skills, tools, experience } from "@shared/schema";
 import portraitImage from "@assets/generated_images/Abstract_designer_portrait_placeholder_19771115.png";
 
 export default function AboutSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+
+  // Skills data
+  const skills = [
+    "UI/UX Design",
+    "Product Design",
+    "Brand Identity",
+    "Design Systems",
+    "Prototyping",
+    "User Research",
+  ];
+
+  const tools = [
+    "Figma",
+    "Adobe Creative Suite",
+    "Framer",
+    "Principle",
+    "Webflow",
+    "After Effects",
+  ];
+
+  const experience = [
+    "8+ Years in Design",
+    "50+ Projects Delivered",
+    "Global Client Base",
+    "Award-Winning Work",
+  ];
 
   return (
     <section
@@ -37,7 +62,8 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative p-8 rounded-md"
             style={{
-              background: "linear-gradient(135deg, rgba(13, 162, 231, 0.1) 0%, rgba(0, 209, 255, 0.05) 100%)",
+              background:
+                "linear-gradient(135deg, rgba(13, 162, 231, 0.1) 0%, rgba(0, 209, 255, 0.05) 100%)",
             }}
           >
             <h2

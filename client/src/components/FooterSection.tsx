@@ -63,7 +63,8 @@ export default function FooterSection() {
       id="contact"
       className="relative py-24 px-8 overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #0A0A0A 0%, rgba(13, 162, 231, 0.15) 100%)",
+        background:
+          "linear-gradient(180deg, #0A0A0A 0%, rgba(13, 162, 231, 0.15) 100%)",
       }}
     >
       <canvas
@@ -106,7 +107,7 @@ export default function FooterSection() {
             className="inline-block font-body text-2xl md:text-3xl text-electric-cyan hover:text-neon-glow transition-colors relative group"
             data-testid="footer-email"
           >
-            tahir@example.com
+            tahirziaee3@gmail.com
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-glow group-hover:w-full transition-all duration-300" />
           </a>
         </motion.div>
@@ -119,7 +120,10 @@ export default function FooterSection() {
           className="pt-12 border-t border-electric-cyan/20"
         >
           <p className="text-sm text-gray-500" data-testid="footer-copyright">
-            © 2025 Crafted and Built by AA.
+            © 2025 Crafted and Built by{" "}
+            <a href="https://aliarsalan.vercel.app/" target="_blank">
+              AA.
+            </a>
           </p>
         </motion.div>
       </div>

@@ -1,11 +1,67 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { mockProjects } from "@shared/schema";
 
 export default function ShowcaseSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
+
+  const mockProjects = [
+    {
+      id: "1",
+      title: "Nebula Finance App",
+      description:
+        "Modern fintech dashboard with real-time analytics and seamless transaction flows",
+      tags: ["UI/UX", "Mobile App", "Fintech"],
+      image: "/project-placeholder-1.jpg",
+      category: "App Design",
+    },
+    {
+      id: "2",
+      title: "Quantum Brand Identity",
+      description:
+        "Complete brand redesign for a cutting-edge AI startup, from logo to digital presence",
+      tags: ["Branding", "Identity", "Visual Design"],
+      image: "/project-placeholder-2.jpg",
+      category: "Branding",
+    },
+    {
+      id: "3",
+      title: "Aurora E-Commerce",
+      description:
+        "Elegant shopping experience with focus on product discovery and minimalist aesthetics",
+      tags: ["Web Design", "E-Commerce", "UI/UX"],
+      image: "/project-placeholder-3.jpg",
+      category: "Web Design",
+    },
+    {
+      id: "4",
+      title: "Pulse Health Platform",
+      description:
+        "Healthcare dashboard bridging patients and providers with intuitive data visualization",
+      tags: ["Dashboard", "Healthcare", "Data Viz"],
+      image: "/project-placeholder-4.jpg",
+      category: "Dashboard",
+    },
+    {
+      id: "5",
+      title: "Stellar Design System",
+      description:
+        "Comprehensive component library and design tokens for scalable product development",
+      tags: ["Design System", "Components", "Documentation"],
+      image: "/project-placeholder-5.jpg",
+      category: "Design System",
+    },
+    {
+      id: "6",
+      title: "Horizon Social App",
+      description:
+        "Next-gen social platform emphasizing authentic connections and creative expression",
+      tags: ["Mobile App", "Social", "UI/UX"],
+      image: "/project-placeholder-6.jpg",
+      category: "App Design",
+    },
+  ];
 
   return (
     <section
