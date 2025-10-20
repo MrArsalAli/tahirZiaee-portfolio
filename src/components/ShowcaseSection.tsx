@@ -115,6 +115,7 @@ export default function ShowcaseSection() {
               <div className="p-6 space-y-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
                   whileHover={{ opacity: 1, y: 0 }}
                   className="space-y-2"
                 >

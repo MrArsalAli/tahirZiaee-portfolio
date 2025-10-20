@@ -6,6 +6,7 @@ import InteractiveSection from "../components/InteractiveSection";
 import FooterSection from "../components/FooterSection";
 import CursorTrail from "../components/CursorTrail";
 import { useScrollTrigger } from "../hooks/useScrollTrigger";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Portfolio() {
   useScrollTrigger();
@@ -30,6 +31,7 @@ export default function Portfolio() {
       <CursorTrail />
       <HeroSection />
       <AboutSection />
+      <ServicesSection/>
       <ShowcaseSection />
       <InteractiveSection />
       <FooterSection />

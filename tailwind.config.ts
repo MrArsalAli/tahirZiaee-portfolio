@@ -72,7 +72,7 @@ export default {
         "sidebar-accent": {
           DEFAULT: "hsl(var(--sidebar-accent) / <alpha-value>)",
           foreground: "hsl(var(--sidebar-accent-foreground) / <alpha-value>)",
-          border: "var(--sidebar-accent-border)"
+          border: "var(--sidebar-accent-border)",
         },
         status: {
           online: "rgb(34 197 94)",
@@ -81,15 +81,15 @@ export default {
           offline: "rgb(156 163 175)",
         },
         // Portfolio custom colors
-        'electric-cyan': '#0DA2E7',
-        'neon-glow': '#00D1FF',
-        'accent-violet': '#B500F1',
-        'pitch-black': '#0A0A0A',
+        "electric-cyan": "#0DA2E7",
+        "neon-glow": "#00D1FF",
+        "accent-violet": "#B500F1",
+        "pitch-black": "#0A0A0A",
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
-        mono: ["var(--font-mono)"],
+        sans: ["Outfit", "Inter", "var(--font-sans)", "sans-serif"],
+        serif: ["var(--font-serif)", "serif"],
+        mono: ["var(--font-mono)", "monospace"],
         heading: ["Space Grotesk", "sans-serif"],
         body: ["Inter", "sans-serif"],
       },
@@ -107,14 +107,16 @@ export default {
           "50%": { opacity: "0.5" },
         },
         "glow-pulse": {
-          "0%, 100%": { 
-            boxShadow: "0 0 20px rgba(13, 162, 231, 0.5), 0 0 40px rgba(13, 162, 231, 0.3)" 
+          "0%, 100%": {
+            boxShadow:
+              "0 0 20px rgba(13, 162, 231, 0.5), 0 0 40px rgba(13, 162, 231, 0.3)",
           },
-          "50%": { 
-            boxShadow: "0 0 30px rgba(13, 162, 231, 0.8), 0 0 60px rgba(13, 162, 231, 0.5)" 
+          "50%": {
+            boxShadow:
+              "0 0 30px rgba(13, 162, 231, 0.8), 0 0 60px rgba(13, 162, 231, 0.5)",
           },
         },
-        "float": {
+        float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-20px)" },
         },
@@ -128,12 +130,13 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "neon-pulse": "neon-pulse 2s ease-in-out infinite",
         "glow-pulse": "glow-pulse 3s ease-in-out infinite",
-        "float": "float 3s ease-in-out infinite",
+        float: "float 3s ease-in-out infinite",
         "slide-up": "slide-up 0.5s ease-out",
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'neon-gradient': 'linear-gradient(135deg, #0DA2E7 0%, #00D1FF 50%, #B500F1 100%)',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "neon-gradient":
+          "linear-gradient(135deg, #0DA2E7 0%, #00D1FF 50%, #B500F1 100%)",
       },
     },
   },

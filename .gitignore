@@ -6,8 +6,7 @@ node_modules/
 .env.local
 
 # local folders
-.local/
-attached_assets/
+.local
 
 # build outputs
 dist/
