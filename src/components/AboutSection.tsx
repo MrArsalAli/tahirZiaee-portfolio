@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import portraitImage from "@assets/generated_images/Abstract_designer_portrait_placeholder_19771115.png";
+import portraitImage from "../../assets/images/dp.png"
 
 export default function AboutSection() {
   const ref = useRef(null);

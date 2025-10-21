@@ -7,6 +7,7 @@ import FooterSection from "../components/FooterSection";
 import CursorTrail from "../components/CursorTrail";
 import { useScrollTrigger } from "../hooks/useScrollTrigger";
 import ServicesSection from "@/components/ServicesSection";
+import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Portfolio() {
   useScrollTrigger();
@@ -14,7 +15,7 @@ export default function Portfolio() {
   useEffect(() => {
     document.documentElement.classList.add("smooth-scroll");
     document.body.style.scrollSnapType = "y proximity";
-    
+
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       section.style.scrollSnapAlign = "start";
@@ -31,8 +32,9 @@ export default function Portfolio() {
       <CursorTrail />
       <HeroSection />
       <AboutSection />
-      <ServicesSection/>
+      <ServicesSection />
       <ShowcaseSection />
+      <ProjectsSection />
       <InteractiveSection />
       <FooterSection />
     </div>
