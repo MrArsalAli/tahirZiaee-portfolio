@@ -21,7 +21,13 @@ export default function HeroSection() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const lines: { x: number; y: number; length: number; speed: number; opacity: number }[] = [];
+    const lines: {
+      x: number;
+      y: number;
+      length: number;
+      speed: number;
+      opacity: number;
+    }[] = [];
 
     for (let i = 0; i < 15; i++) {
       lines.push({
@@ -107,26 +113,33 @@ export default function HeroSection() {
         data-testid="hero-neon-canvas"
       />
 
-      <div className="relative z-10 text-center px-8 max-w-6xl mx-auto">
-        <motion.h1
+      {/* Random background image */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1920&q=80"
+          alt="Creative abstract"
+          className="w-full h-full object-cover opacity-40"
+        />
+      </div>
+
+      {/* Overlay content */}
+      <div className="relative z-10 text-center px-8 max-w-4xl mx-auto">
+        <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="font-heading font-bold text-6xl md:text-8xl lg:text-9xl text-white text-glow mb-8"
-          data-testid="hero-title"
+          className="font-heading font-semibold text-5xl md:text-7xl text-white text-glow mb-6"
         >
-          Tahir Ziaee
-        </motion.h1>
+          Crafting Digital Emotions
+        </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="font-body text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
-          data-testid="hero-subtitle"
+          className="font-body text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
         >
-          Design is not what it looks like — it's how it feels to move through
-          it.
+          Where creativity meets code — and pixels come alive.
         </motion.p>
 
         <motion.div
@@ -138,7 +151,6 @@ export default function HeroSection() {
           <a
             href="#about"
             className="inline-block text-electric-cyan hover:text-neon-glow transition-colors"
-            data-testid="hero-scroll-link"
           >
             <svg
               className="w-8 h-8 animate-bounce"
