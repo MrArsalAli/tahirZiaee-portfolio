@@ -13,7 +13,7 @@ export default function ShowcaseSection() {
       description:
         "Modern fintech dashboard with real-time analytics and seamless transaction flows",
       tags: ["UI/UX", "Mobile App", "Fintech"],
-      image: "/project-placeholder-1.jpg",
+      image: "../../assets/images/mr1.jpg",
       category: "App Design",
     },
     {
@@ -22,7 +22,7 @@ export default function ShowcaseSection() {
       description:
         "Complete brand redesign for a cutting-edge AI startup, from logo to digital presence",
       tags: ["Branding", "Identity", "Visual Design"],
-      image: "/project-placeholder-2.jpg",
+      image: "../../assets/images/mr2.jpg",
       category: "Branding",
     },
     {
@@ -31,7 +31,7 @@ export default function ShowcaseSection() {
       description:
         "Elegant shopping experience with focus on product discovery and minimalist aesthetics",
       tags: ["Web Design", "E-Commerce", "UI/UX"],
-      image: "/project-placeholder-3.jpg",
+      image: "../../assets/images/mr3.jpg",
       category: "Web Design",
     },
     {
@@ -40,7 +40,7 @@ export default function ShowcaseSection() {
       description:
         "Healthcare dashboard bridging patients and providers with intuitive data visualization",
       tags: ["Dashboard", "Healthcare", "Data Viz"],
-      image: "/project-placeholder-4.jpg",
+      image: "../../assets/images/mr4.jpg",
       category: "Dashboard",
     },
     {
@@ -49,7 +49,7 @@ export default function ShowcaseSection() {
       description:
         "Comprehensive component library and design tokens for scalable product development",
       tags: ["Design System", "Components", "Documentation"],
-      image: "/project-placeholder-5.jpg",
+      image: "../../assets/images/mr5.jpg",
       category: "Design System",
     },
     {
@@ -58,7 +58,7 @@ export default function ShowcaseSection() {
       description:
         "Next-gen social platform emphasizing authentic connections and creative expression",
       tags: ["Mobile App", "Social", "UI/UX"],
-      image: "/project-placeholder-6.jpg",
+      image: "../../assets/images/mr6.jpg",
       category: "App Design",
     },
   ];
@@ -95,24 +95,17 @@ export default function ShowcaseSection() {
               className="group relative glass-card rounded-md overflow-hidden neon-border-hover transition-all duration-300"
               data-testid={`showcase-project-${project.id}`}
             >
-              <div className="aspect-video bg-gradient-to-br from-electric-cyan/20 to-accent-violet/20 flex items-center justify-center relative overflow-hidden">
+              <div className="bg-gradient-to-br from-electric-cyan/20 to-accent-violet/20 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-electric-cyan/10 to-transparent" />
-                <svg
-                  className="w-20 h-20 text-electric-cyan/40"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
+                <img
+                  src={project.image}
+                  alt={`Design ${index + 1}`}
+                  draggable="false"
+                  className="h-full w-full object-cover opacity-90 cursor-pointer transition-opacity duration-300"
+                />
               </div>
 
-              <div className="p-6 space-y-4">
+              {/* <div className="p-6 space-y-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -136,7 +129,7 @@ export default function ShowcaseSection() {
                     ))}
                   </div>
                 </motion.div>
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </div>
