@@ -111,6 +111,22 @@ export default function FooterSection() {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-glow group-hover:w-full transition-all duration-300" />
           </a>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <a
+            href="https://wa.me/+971502079132"
+            target="_blank"
+            className="inline-block font-body text-2xl md:text-3xl text-electric-cyan hover:text-neon-glow transition-colors relative group"
+            data-testid="footer-email"
+          >
+            +971 502079132
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-glow group-hover:w-full transition-all duration-300" />
+          </a>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}

@@ -59,7 +59,7 @@ export default function AboutSection() {
         </div>
 
         <h3 className="text-2xl font-heading font-bold mb-2 text-white">
-          Faraz Ziaee
+          Tahir Ziaee
         </h3>
         <p className="text-[#0DA2E7] font-medium mb-6">
           Graphic Designer & UI/UX Expert
@@ -78,7 +78,7 @@ export default function AboutSection() {
             <button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1gBTYjPl7-Xf9x7bV4ll4WpRCyryWoRQP/view?usp=drivesdk",
+                  "https://drive.google.com/file/d/1owxoGFaRtyX2N7Zly0ISKdNYLmHmEWVz/view?usp=drivesdk",
                   "_blank"
                 )
               }
