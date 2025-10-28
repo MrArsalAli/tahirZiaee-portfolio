@@ -5,6 +5,10 @@ import { Toaster } from "./components/ui/toaster";
 import { TooltipProvider } from "./components/ui/tooltip";
 import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/not-found";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
 function Router() {
   return (

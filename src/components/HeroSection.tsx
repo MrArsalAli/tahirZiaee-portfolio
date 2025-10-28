@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import video from "../../assets/hero-bg.mp4";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 if (typeof window !== "undefined") {
@@ -113,13 +114,17 @@ export default function HeroSection() {
         data-testid="hero-neon-canvas"
       />
 
-      {/* Random background image */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1920&q=80"
-          alt="Creative abstract"
-          className="w-full h-full object-cover opacity-40"
-        />
+      <div className="absolute top-0 left-0 w-full h-screen overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-50"
+        >
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Overlay content */}

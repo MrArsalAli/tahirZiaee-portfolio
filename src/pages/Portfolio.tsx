@@ -5,6 +5,7 @@ import ShowcaseSection from "../components/ShowcaseSection";
 import InteractiveSection from "../components/InteractiveSection";
 import FooterSection from "../components/FooterSection";
 import CursorTrail from "../components/CursorTrail";
+import PortfolioCarousel from "../components/PortfolioCarousel"
 import { useScrollTrigger } from "../hooks/useScrollTrigger";
 import ServicesSection from "@/components/ServicesSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -33,6 +34,7 @@ export default function Portfolio() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <PortfolioCarousel />
       <ShowcaseSection />
       <ProjectsSection />
       <InteractiveSection />
