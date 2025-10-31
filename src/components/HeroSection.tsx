@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import video from "../../assets/hero-bg.mp4";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 if (typeof window !== "undefined") {
@@ -122,7 +121,7 @@ export default function HeroSection() {
           playsInline
           className="w-full h-full object-cover opacity-50"
         >
-          <source src={video} type="video/mp4" />
+          <source src="https://res.cloudinary.com/dl4kqxuyk/video/upload/v1761920429/bg-video_kdjlh6.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

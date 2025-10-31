@@ -8,7 +8,6 @@ import CursorTrail from "../components/CursorTrail";
 import PortfolioCarousel from "../components/PortfolioCarousel"
 import { useScrollTrigger } from "../hooks/useScrollTrigger";
 import ServicesSection from "@/components/ServicesSection";
-import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Portfolio() {
   useScrollTrigger();
@@ -34,9 +33,8 @@ export default function Portfolio() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <PortfolioCarousel />
       <ShowcaseSection />
-      <ProjectsSection />
+      <PortfolioCarousel />
       <InteractiveSection />
       <FooterSection />
     </div>

@@ -136,8 +136,13 @@ export default function FooterSection() {
           className="pt-12 border-t border-electric-cyan/20"
         >
           <p className="text-sm text-gray-500" data-testid="footer-copyright">
-            © 2025 Crafted and Built by{" "}
-            <a href="https://aliarsalan.vercel.app/" target="_blank">
+            © {new Date().getFullYear()} Crafted and Built by{" "}
+            <a
+              href="https://aliarsalan.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-electric-cyan hover:text-neon-glow transition-colors"
+            >
               AA.
             </a>
           </p>
