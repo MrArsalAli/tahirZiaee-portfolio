@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import bg from "../../assets/bg.png"
 import { useRef } from "react";
 import mr1 from "../../assets/images/mr1.jpg"
 import mr2 from "../../assets/images/mr2.jpg"
@@ -84,8 +85,15 @@ export default function ShowcaseSection() {
       id="showcase"
       ref={ref}
       className="relative min-h-[90vh] py-24 px-8"
-      style={{ background: "#0A0A0A" }}
     >
+      {/* Background Image */}
+            <div className="absolute inset-0">
+              <img
+                src={bg}
+                alt="Background"
+                className="w-full h-full object-cover"
+              />
+            </div>
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -121,31 +129,6 @@ export default function ShowcaseSection() {
                 />
               </div>
 
-              {/* <div className="p-6 space-y-4">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  whileHover={{ opacity: 1, y: 0 }}
-                  className="space-y-2"
-                >
-                  <h3 className="font-heading text-xl font-semibold text-white group-hover:text-electric-cyan transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="px-2 py-1 text-xs bg-electric-cyan/10 text-neon-glow rounded border border-electric-cyan/20"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              </div> */}
             </motion.div>
           ))}
         </div>

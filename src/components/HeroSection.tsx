@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -104,74 +104,106 @@ export default function HeroSection() {
     <section
       id="hero"
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-between overflow-hidden"
       style={{ background: "#0A0A0A" }}
     >
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 pointer-events-none"
-        data-testid="hero-neon-canvas"
-      />
-
-      <div className="absolute top-0 left-0 w-full h-screen overflow-hidden">
+      {/* === Background Video === */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover opacity-40"
         >
-          <source src="https://res.cloudinary.com/dl4kqxuyk/video/upload/v1761920429/bg-video_kdjlh6.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dl4kqxuyk/video/upload/v1761920429/bg-video_kdjlh6.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
 
-      {/* Overlay content */}
-      <div className="relative z-10 text-center px-8 max-w-4xl mx-auto">
+      {/* === Navbar === */}
+      <nav className="relative z-20 flex justify-between items-center px-8 py-6 bg-black/30 backdrop-blur-md border-b border-electric-cyan/20">
+        <h1 className="font-heading text-2xl text-white tracking-wider">
+          <span className="text-electric-cyan">Tahir</span> Ziaee
+        </h1>
+        <ul className="hidden md:flex space-x-8 text-gray-300 font-medium">
+          {["Home", "About", "Services", "Projects", "Contact"].map((item) => (
+            <li key={item}>
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="hover:text-electric-cyan transition-colors duration-300"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <button className="md:hidden text-white text-2xl">&#9776;</button>
+      </nav>
+
+      {/* === Hero Content === */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-8 py-24">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="font-heading font-semibold text-5xl md:text-7xl text-white text-glow mb-6"
         >
-          Crafting Digital Emotions
+          Passionate UI/UX Designer
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="font-body text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
+          className="font-body text-lg md:text-3xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
         >
-          Where creativity meets code — and pixels come alive.
+          With over two years of experience, bringing ideas to life
+          throughintuitive and impactful design. As a freelancer, I specialize
+          in creating seamless, user centered interfaces for apps, websites.
+          Let's make your vision a reality.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+        <motion.a
+          href="#projects"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mt-16"
+          className="mt-10 inline-block bg-electric-cyan/20 hover:bg-electric-cyan/40 text-electric-cyan font-semibold px-8 py-3 rounded-lg border border-electric-cyan/30 backdrop-blur-md transition-all duration-300"
         >
-          <a
-            href="#about"
-            className="inline-block text-electric-cyan hover:text-neon-glow transition-colors"
-          >
-            <svg
-              className="w-8 h-8 animate-bounce"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
-          </a>
-        </motion.div>
+          Explore My Work
+        </motion.a>
       </div>
+
+      {/* === Bottom Scroll Indicator === */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="relative z-10 flex justify-center mb-8"
+      >
+        <a
+          href="#about"
+          className="text-electric-cyan hover:text-neon-glow transition-colors"
+        >
+          <svg
+            className="w-8 h-8 animate-bounce"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </a>
+      </motion.div>
     </section>
   );
 }
