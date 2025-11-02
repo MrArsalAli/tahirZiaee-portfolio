@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import bg from "../../assets/bg.png"
 import { useRef } from "react";
 import mr1 from "../../assets/images/mr1.jpg"
 import mr2 from "../../assets/images/mr2.jpg"
@@ -86,14 +85,6 @@ export default function ShowcaseSection() {
       ref={ref}
       className="relative min-h-[90vh] py-24 px-8"
     >
-      {/* Background Image */}
-            <div className="absolute inset-0">
-              <img
-                src={bg}
-                alt="Background"
-                className="w-full h-full object-cover"
-              />
-            </div>
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}

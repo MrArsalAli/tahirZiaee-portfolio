@@ -6,6 +6,10 @@ import {
   EffectCoverflow,
   Autoplay,
 } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 import mr1 from "../../assets/1.png";
 import mr2 from "../../assets/2.png";
 import mr3 from "../../assets/3.png";
@@ -17,16 +21,12 @@ import mr8 from "../../assets/8.png";
 import mr9 from "../../assets/9.png";
 import mr10 from "../../assets/10.png";
 import mr11 from "../../assets/11.png";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/effect-coverflow";
 
 const projects = [mr1, mr2, mr3, mr4, mr6, mr5, mr6, mr7, mr8, mr9, mr10, mr11];
 
 export default function PortfolioCarousel() {
   return (
-    <div className="bg-gray-950 py-16 px-6" id="projects">
+    <div className="py-16 px-6" id="projects">
       <h2 className="text-center text-3xl font-bold text-white mb-4">
         My <span className="text-[#0DA2E7]">Projects</span>
       </h2>

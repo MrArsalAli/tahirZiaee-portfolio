@@ -59,14 +59,7 @@ export default function FooterSection() {
   }, []);
 
   return (
-    <footer
-      id="contact"
-      className="relative py-24 px-8 overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(180deg, #0A0A0A 0%, rgba(13, 162, 231, 0.15) 100%)",
-      }}
-    >
+    <footer id="contact" className="relative py-24 px-8 overflow-hidden">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 pointer-events-none"

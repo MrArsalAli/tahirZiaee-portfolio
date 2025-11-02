@@ -105,43 +105,30 @@ export default function HeroSection() {
       id="hero"
       ref={heroRef}
       className="relative min-h-screen flex flex-col justify-between overflow-hidden"
-      style={{ background: "#0A0A0A" }}
     >
-      {/* === Background Video === */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover opacity-40"
-        >
-          <source
-            src="https://res.cloudinary.com/dl4kqxuyk/video/upload/v1761920429/bg-video_kdjlh6.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
       {/* === Navbar === */}
-      <nav className="relative z-20 flex justify-between items-center px-8 py-6 bg-black/30 backdrop-blur-md border-b border-electric-cyan/20">
+      <nav
+        className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-5 
+bg-white/10 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+      >
         <h1 className="font-heading text-2xl text-white tracking-wider">
-          <span className="text-electric-cyan">Tahir</span> Ziaee
+          <span className="text-[#0DA2E7]">Tahir</span> Ziaee
         </h1>
+
         <ul className="hidden md:flex space-x-8 text-gray-300 font-medium">
           {["Home", "About", "Services", "Projects", "Contact"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}
-                className="hover:text-electric-cyan transition-colors duration-300"
+                className="hover:text-[#0DA2E7] transition-colors duration-300"
               >
                 {item}
               </a>
             </li>
           ))}
         </ul>
-        <button className="md:hidden text-white text-2xl">&#9776;</button>
+
+        <button className="md:hidden text-white text-3xl">&#9776;</button>
       </nav>
 
       {/* === Hero Content === */}

@@ -53,7 +53,6 @@ export default function InteractiveSection() {
       id="interactive"
       ref={ref}
       className="relative min-h-[70vh] flex items-center justify-center py-24 px-8 overflow-hidden"
-      style={{ background: "#0A0A0A" }}
     >
       <div
         ref={svg1Ref}
@@ -90,7 +89,10 @@ export default function InteractiveSection() {
         <PenTool className="animate-float" />
       </div>
 
-      <div className="relative z-10 text-center max-w-4xl mx-auto" data-testid="interactive-content">
+      <div
+        className="relative z-10 text-center max-w-4xl mx-auto"
+        data-testid="interactive-content"
+      >
         <motion.h2
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}

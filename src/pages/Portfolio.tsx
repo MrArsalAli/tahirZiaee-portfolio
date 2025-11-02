@@ -28,7 +28,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen" style={{ background: "#0A0A0A" }}>
+    <div className="min-h-screen bg-[url('../../assets/bg.png')] bg-cover bg-center bg-no-repeat bg-fixed">
       <CursorTrail />
       <HeroSection />
       <AboutSection />

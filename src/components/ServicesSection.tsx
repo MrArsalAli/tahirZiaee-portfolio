@@ -1,4 +1,3 @@
-import bg from "../../assets/bg.png"
 
 export default function ServicesSection() {
   const services = [
@@ -45,16 +44,8 @@ export default function ServicesSection() {
     {/* Services Section */}
     <section
       id="services"
-      className="relative py-24 px-6 bg-[#020617] overflow-hidden"
+      className="relative py-24 px-6"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={bg}
-          alt="Background"
-          className="w-full h-full object-cover"
-        />
-      </div>
 
       {/* Subtle animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0DA2E7]/15 via-transparent to-[#0DA2E7]/5 blur-3xl opacity-50"></div>
