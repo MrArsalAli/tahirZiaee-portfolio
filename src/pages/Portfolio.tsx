@@ -5,7 +5,7 @@ import ShowcaseSection from "../components/ShowcaseSection";
 import InteractiveSection from "../components/InteractiveSection";
 import FooterSection from "../components/FooterSection";
 import CursorTrail from "../components/CursorTrail";
-import PortfolioCarousel from "../components/PortfolioCarousel"
+import PortfolioCarousel from "../components/PortfolioCarousel";
 import { useScrollTrigger } from "../hooks/useScrollTrigger";
 import ServicesSection from "@/components/ServicesSection";
 
@@ -28,7 +28,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[url('../../assets/bg.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+    <div className="min-h-screen bg-[url('/assets/bg.png')] bg-cover bg-center bg-no-repeat bg-fixed">
       <CursorTrail />
       <HeroSection />
       <AboutSection />

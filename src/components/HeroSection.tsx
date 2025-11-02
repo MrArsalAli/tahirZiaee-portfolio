@@ -132,7 +132,7 @@ bg-white/10 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgb(0,0
       </nav>
 
       {/* === Hero Content === */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-8 py-24">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-8 pt-52 py-24">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
