@@ -1,83 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import mr1 from "../../assets/images/mr1.jpg"
-import mr2 from "../../assets/images/mr2.jpg"
-import mr3 from "../../assets/images/mr3.jpg"
-import mr4 from "../../assets/images/mr4.jpg"
-import mr5 from "../../assets/images/mr5.jpg"
-import mr6 from "../../assets/images/mr6.jpg"
+import mr1 from "../../assets/images/mr1.jpg";
+import mr2 from "../../assets/images/mr2.jpg";
+import mr3 from "../../assets/images/mr3.jpg";
+import mr4 from "../../assets/images/mr4.jpg";
+import mr5 from "../../assets/images/mr5.jpg";
+import mr6 from "../../assets/images/mr6.jpg";
 
 export default function ShowcaseSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
-  // const mockProjects = [
-  //   {
-  //     id: "1",
-  //     title: "Nebula Finance App",
-  //     description:
-  //       "Modern fintech dashboard with real-time analytics and seamless transaction flows",
-  //     tags: ["UI/UX", "Mobile App", "Fintech"],
-  //     image: "../../assets/images/mr1.jpg",
-  //     category: "App Design",
-  //   },
-  //   {
-  //     id: "2",
-  //     title: "Quantum Brand Identity",
-  //     description:
-  //       "Complete brand redesign for a cutting-edge AI startup, from logo to digital presence",
-  //     tags: ["Branding", "Identity", "Visual Design"],
-  //     image: "../../assets/images/mr2.jpg",
-  //     category: "Branding",
-  //   },
-  //   {
-  //     id: "3",
-  //     title: "Aurora E-Commerce",
-  //     description:
-  //       "Elegant shopping experience with focus on product discovery and minimalist aesthetics",
-  //     tags: ["Web Design", "E-Commerce", "UI/UX"],
-  //     image: "../../assets/images/mr3.jpg",
-  //     category: "Web Design",
-  //   },
-  //   {
-  //     id: "4",
-  //     title: "Pulse Health Platform",
-  //     description:
-  //       "Healthcare dashboard bridging patients and providers with intuitive data visualization",
-  //     tags: ["Dashboard", "Healthcare", "Data Viz"],
-  //     image: "../../assets/images/mr4.jpg",
-  //     category: "Dashboard",
-  //   },
-  //   {
-  //     id: "5",
-  //     title: "Stellar Design System",
-  //     description:
-  //       "Comprehensive component library and design tokens for scalable product development",
-  //     tags: ["Design System", "Components", "Documentation"],
-  //     image: "../../assets/images/mr5.jpg",
-  //     category: "Design System",
-  //   },
-  //   {
-  //     id: "6",
-  //     title: "Horizon Social App",
-  //     description:
-  //       "Next-gen social platform emphasizing authentic connections and creative expression",
-  //     tags: ["Mobile App", "Social", "UI/UX"],
-  //     image: "../../assets/images/mr6.jpg",
-  //     category: "App Design",
-  //   },
-  // ];
-
-
-  const projects = [
-    mr2,
-    mr3,
-    mr4,
-    mr5,
-    mr1,
-    mr6
-  ]
+  const projects = [mr2, mr3, mr4, mr5, mr1, mr6];
 
   return (
     <section
@@ -105,8 +40,8 @@ export default function ShowcaseSection() {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ scale: 1.16 }}
+              transition={{ duration: 0.6 }}
               className="group relative glass-card rounded-md overflow-hidden neon-border-hover transition-all duration-300"
               data-testid={`showcase-project-${index}`}
             >
@@ -119,7 +54,6 @@ export default function ShowcaseSection() {
                   className="h-full w-full object-cover opacity-90 cursor-pointer transition-opacity duration-300"
                 />
               </div>
-
             </motion.div>
           ))}
         </div>
