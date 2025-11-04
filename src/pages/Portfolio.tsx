@@ -35,7 +35,7 @@ export default function Portfolio() {
       <ServicesSection />
       <ShowcaseSection />
       <PortfolioCarousel />
-      <InteractiveSection />
+      {/* <InteractiveSection /> */}
       <FooterSection />
     </div>
   );

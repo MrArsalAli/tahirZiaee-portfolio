@@ -78,7 +78,7 @@ export default function AboutSection() {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1owxoGFaRtyX2N7Zly0ISKdNYLmHmEWVz/view?usp=drivesdk",
+                      "https://drive.google.com/file/d/1FOPuuqJv3xL5FVAiNhuGorHwpFC69IIQ/view?usp=drivesdk",
                       "_blank"
                     )
                   }
@@ -104,7 +104,7 @@ export default function AboutSection() {
             }}
           >
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-2 text-glow-sm">
-              I am Tahir Ziaee
+              I Am Tahir Ziaee
             </h2>
             <h2 className="font-heading text-xl md:text-xl font-bold text-white mb-2 text-glow-sm">
               Passionate UI/UX Designer

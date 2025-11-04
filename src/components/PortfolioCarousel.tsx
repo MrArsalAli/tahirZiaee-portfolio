@@ -26,9 +26,9 @@ const projects = [mr1, mr2, mr3, mr4, mr6, mr5, mr6, mr7, mr8, mr9, mr10, mr11];
 
 export default function PortfolioCarousel() {
   return (
-    <div className="py-16 px-6" id="projects">
-      <h2 className="text-center text-3xl font-bold text-white mb-4">
-        My <span className="text-[#0DA2E7]">Projects</span>
+    <div className="py-16 px-6 text-center" id="projects">
+      <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-12">
+        My <span className="text-[#0DA2E7] drop-shadow-[0_0_20px_#0DA2E7]">Projects</span>
       </h2>
 
       <Swiper
@@ -52,7 +52,7 @@ export default function PortfolioCarousel() {
         {projects.map((project, index) => (
           <SwiperSlide
             key={index}
-            className="md:w-[40%] md:h-[80vh] bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            className="md:w-[50%] md:h-[80vh] bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
           >
             <img
               src={project}
