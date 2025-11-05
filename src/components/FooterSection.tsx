@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
+
 import { useEffect, useRef } from "react";
 
 export default function FooterSection() {
@@ -95,30 +97,28 @@ export default function FooterSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <a
-            href="mailto:tahir@example.com"
-            className="inline-block font-body text-2xl md:text-3xl text-electric-cyan hover:text-neon-glow transition-colors relative group"
-            data-testid="footer-email"
-          >
-            tahirziaee3@gmail.com
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-glow group-hover:w-full transition-all duration-300" />
-          </a>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-        >
-          <a
-            href="https://wa.me/+971502079132"
-            target="_blank"
-            className="inline-block font-body text-2xl md:text-3xl text-electric-cyan hover:text-neon-glow transition-colors relative group"
-            data-testid="footer-email"
-          >
-            +971 502079132
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-glow group-hover:w-full transition-all duration-300" />
-          </a>
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-center mb-16">
+            <a
+              href="mailto:tahir@example.com"
+              className="flex items-center gap-4 bg-white/5 backdrop-blur-md px-8 py-4 rounded-2xl border border-white/10 hover:border-[#0DA2E7] transition-all duration-500 group hover:shadow-[0_0_25px_#0DA2E7]/40"
+            >
+              <Mail className="w-6 h-6 text-[#0DA2E7] group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-medium text-gray-200 group-hover:text-[#0DA2E7] transition-colors duration-300">
+                tahirziaee3@gmail.com
+              </span>
+            </a>
+
+            <a
+              href="https://wa.me/+971502079132"
+              target="_blank"
+              className="flex items-center gap-4 bg-white/5 backdrop-blur-md px-8 py-4 rounded-2xl border border-white/10 hover:border-[#0DA2E7] transition-all duration-500 group hover:shadow-[0_0_25px_#0DA2E7]/40"
+            >
+              <Phone className="w-6 h-6 text-[#0DA2E7] group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-medium text-gray-200 group-hover:text-[#0DA2E7] transition-colors duration-300">
+                +971 502079132
+              </span>
+            </a>
+          </div>
         </motion.div>
 
         <motion.div
