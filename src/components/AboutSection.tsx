@@ -78,7 +78,7 @@ export default function AboutSection() {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1FOPuuqJv3xL5FVAiNhuGorHwpFC69IIQ/view?usp=drivesdk",
+                      "https://drive.google.com/file/d/1-I4iVwuO164L2rjtNoYW51uPoIgqVghc/view?usp=sharing",
                       "_blank"
                     )
                   }
